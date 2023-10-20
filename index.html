@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/94f4739534.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div id="header">
@@ -21,7 +24,7 @@
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Ranjith Gopinath</span> <br>From US</h1>
+                <h1>Hi, I'm <span class="name">Ranjith Gopinath</span> <br>From US</h1>
                 <div class="profileimg">
 
                     <img src="/images/Profile.JPG" alt="">
@@ -39,19 +42,93 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p >
+                    <p class="para">
                         I finished my higher secondary school in 2016 and my undergraduate studies in 2020 in the stream of Electronics and Communications Engineering . I had done my final year project based on IOT integrating with C. I had experience of 1 year worked as a Customer representative and pursuing a master's degree in computer science at California state institution.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link"> Education</p>
-                        <p class="tab-links"> Experience</p>
-                        <p class="tab-links"> Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('education')"> Education</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')"> Skills</p>
                     </div>
-                   
+                   <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>Bachelors</span><br>Electronics and Communication(2016-2020)</li>
+                        <li><span>Masters</span><br>Computer Science(2022-2024) </li>
+                        
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Teleperformance</span><br>IT Support<br>2021(January-December)<br><br><span>Sutherland</span><br>IT Support<br>2022(January-July)<br><br><span>CSUDH</span><br>IT Support<br>2023(Current)</li>
+                        
+                        
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="skills">
+                    <ul>
+                        <span>Python(Intermediate)<br><br>Java(Basic)<br><br>HTML(Intermediate)<br><br>C++(Basic)</span>
+                        
+                        
+                    </ul>
+                   </div>
                 </div>
 
             </div>
         </div>
     </div>
+
+    <!-----------services------>
+
+    <div id="services">
+    <div class="container">
+
+        <h1 class="sub-title1">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> IOT Smart Vehicle Parking</h2>
+                <p>
+                    During My Bachelors I had done project using IOT and C Programming a Smart vechicle parking system that allow 
+                    users to find parking spot immediately without waiting in a queue  </p>
+                <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Application Development</h2>
+                <p>
+                    During my masters I created the application based on topic where we can find nearby cardrivers to hire instead of a car. 
+                    I've used React-Native and JavaScript SQl for database.  </p>
+                <a href="#"> Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2> App Design</h2>
+            <p>
+                Web design is the process of creating the visual and functional aspects of a website. It involves planning, conceptualizing, and arranging various elements on a web page, including layout, color, graphics, text, and interactive features, to create an appealing and 
+                user-friendly website.  </p>
+            <a href="#"> Learn more</a>
+
+    </div>
+
+
+
+    </div>
+    <script>
+
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents = document.getElementsByClassName("tab-contents");
+
+         function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
 </body>
 </html>

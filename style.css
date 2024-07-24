@@ -83,6 +83,12 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 20px;
 }
+
+.header-text b{
+
+color: #080808;
+
+}
 .profileimg img{
     height: 80vh;
     position: absolute;
@@ -95,8 +101,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: wheat;
     transition: background 0.5s, transform 0.5s;
-
-    
+ 
 
 }
 

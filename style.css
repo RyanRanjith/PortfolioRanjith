@@ -360,7 +360,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
  }
  .contact-left p{
-    margin-top: 30px;
+    margin-top: 40px;
  }
  .contact-left p i{
     color: #ff004f;
@@ -459,6 +459,10 @@ nav ul li a:hover::after{
         z-index: 2;
         transition: right 0.5s;
         
+     }
+     .contact-left h1{
+       font-size: 40px;
+       padding-top: 20px;
      }
      nav ul li{
         display: block;

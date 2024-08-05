@@ -35,8 +35,13 @@ body{
 }
 
 .container li a{
-    color: plum;
+    color: black;
     font-weight:bold;
+    border-radius: 25px;
+  background: #73AD21;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
 }
 
 .logo  {
@@ -86,7 +91,14 @@ nav ul li a:hover::after{
 
 .header-text b{
 
-color: #080808;
+    color: black;
+    font-weight:bold;
+    border-radius: 25px;
+  background: #73AD21;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+
 
 }
 .profileimg img{
@@ -99,8 +111,13 @@ color: #080808;
 }
 
 .header-text h1 span{
-    color: wheat;
+    color: black;
     transition: background 0.5s, transform 0.5s;
+    border-radius: 25px;
+  background: lightgreen;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
  
 
 }
@@ -425,7 +442,7 @@ color: #080808;
         font-size: 30px;
         position: relative;
         top: -3rem;
-        color: white;
+        color: black;
      }
      nav .fa-regular{
         display: block;
@@ -441,10 +458,12 @@ color: #080808;
         padding-top:50px;
         z-index: 2;
         transition: right 0.5s;
+        
      }
      nav ul li{
         display: block;
         margin: 25px;
+        
      }
      nav ul .fa-regular{
         position: absolute;
